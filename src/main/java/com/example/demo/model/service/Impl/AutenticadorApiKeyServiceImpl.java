@@ -47,7 +47,7 @@ public class AutenticadorApiKeyServiceImpl implements AutenticadorApiKeyService 
         }
         requisicaoDTO.setResponseCode(responseCode);
         requisicaoDTO.setResponse(response.toString());
-        return null;
+        return requisicaoDTO;
     }
 
     public Boolean validarTokens(String APIKey, String APIToken) {
