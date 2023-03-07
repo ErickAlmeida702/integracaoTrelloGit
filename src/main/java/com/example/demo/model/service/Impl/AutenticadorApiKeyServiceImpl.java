@@ -19,8 +19,8 @@ public class AutenticadorApiKeyServiceImpl implements AutenticadorApiKeyService 
 
     public HttpURLConnection montarURLAutenticada(String url, String tipoRequisicao) throws IOException {
 
-        String APIKey = "0076141fb92e1b1976ef4088d9d93d7a";
-        String APIToken = "ATTA02b98f9078c96757972b1530dac3f6e12471e1a676b7a2d7a7b890489cfbd9aaAC3D4284";
+        String APIKey = "";
+        String APIToken = "";
 
         String urlAutenticada = URL_BASE + url + "&key=" + APIKey + "&" + "token=" + APIToken;
         URL obj = new URL(urlAutenticada);

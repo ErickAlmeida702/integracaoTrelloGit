@@ -15,10 +15,6 @@ public class DadoWorkSpaceServiceImpl implements DadosWorkSpaceService {
     @Autowired
     AutenticadorApiKeyService autenticadorApiKeyService;
 
-
-    private static final String URL_BASE = "https://api.trello.com";
-
-    //String é o ID do quadro
     private static final String URL_QUADROS_USUARIO = "1/boards/%s/?cards=all";
 
     public RequisicaoDTO buscarWorkSpacePorUsuario(String codigoWorkSpace) {
