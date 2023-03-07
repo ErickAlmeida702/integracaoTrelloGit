@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class AutenticadorApiKeyController {
 
     @Autowired
-    AutenticadorApiKeyService autenticadorApiKeyService;
+    private AutenticadorApiKeyService autenticadorApiKeyService;
 
     @RequestMapping(value = "validarToken.do")
     @ResponseBody
